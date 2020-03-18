@@ -10,12 +10,17 @@ AppCompatActivityを継承している場合は、ThemeにTheme.AppCompat
 3.ナビゲーションバー  
 
 ## ステータスバーについて
+次の実装にて変更される。（values/styles.xml）  
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+         <item name="android:statusBarColor">#000000</item>
+    </style>
 
 ## ツールバー（アクションバー）について  
 ActionBarについて。ActionBarはアプリのテーマとして自動で定義されているものになる。  
 変更したい場合は、style.xmlのテーマの要素として、定義を追記したり、属性値を変更すればよい。  
 らしいので、以下のように実装してみたが正しく反映されなかった・・・。
-
+（values/styles.xml）
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="actionBarStyle">@style/actionBar</item>
     </style>
@@ -27,7 +32,7 @@ ActionBarについて。ActionBarはアプリのテーマとして自動で定�
 
 ### ActionBarの動作の記述
 自動で生成されるViewですのでActivity内のコールバックメソッドで動作を記述するものがあります。以下は一例。
-
+(MainActivity.java)
     class MainActivity : AppCompatActivity() {
       override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -54,7 +59,7 @@ ActionBarについて。ActionBarはアプリのテーマとして自動で定�
 ToolBarは各layoutに記述するViewとなります。  
 ほぼActionBarと同等な機能を有しますが、CoordinatorLayoutと組み合わせて動的にlayout制御することができたり、  
 カスタマイズしやすいコンポーネント(らしい)です。
-
+（values/styles.xml）
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
                 <item name="toolbarStyle">@style/MyApp.Toolbar</item>
     </style>
@@ -68,3 +73,18 @@ ToolBarは各layoutに記述するViewとなります。
  見事にハマってしまった。
      
 ## ナビゲーションバー について
+次の実装にて変更される。（values/styles.xml）  
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+         <item name="android:navigationBarColor">#ffffff</item>
+    </style>
+    
+## その他いろいろ  
+### android:windowBackground  
+アプリケーションボディの背景色  
+### android:textColorPrimary  
+アクションバーのタイトル文字色/edittextの文字色  
+### android:textColor  
+文字色／ボタン文字色  
+### colorAccent  
+コントロールの基本色（反映されず・・・）   
