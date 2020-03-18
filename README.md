@@ -10,7 +10,8 @@ AppCompatActivityを継承している場合は、ThemeにTheme.AppCompat
 3.ナビゲーションバー  
 
 ## ステータスバーについて
-次の実装にて変更される。（values/styles.xml）
+次の実装にて変更される。（values/styles.xml）  
+
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
          <item name="android:statusBarColor">#000000</item>
     </style>
@@ -72,7 +73,8 @@ ToolBarは各layoutに記述するViewとなります。
  見事にハマってしまった。
      
 ## ナビゲーションバー について
-次の実装にて変更される。（values/styles.xml）
+次の実装にて変更される。（values/styles.xml）  
+
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
          <item name="android:navigationBarColor">#ffffff</item>
     </style>
