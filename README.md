@@ -1,5 +1,12 @@
 # android_ChangeTheme
 
+## アプリ動作
+起動後、テーマ変更ボタンを押下し一旦アプリを再起動するとThemeが変わります。
+
+## アプリ実装
+SharedPreferencesにて、themeの種別を保持し、  
+次回起動時のonCreate()にてthemeの値をセットします。
+
 ## Themeの継承について
 AppCompatActivityを継承している場合は、ThemeにTheme.AppCompat  
 またはTheme.AppCompatを含んだThemeを指定しないとErrorとなる。
