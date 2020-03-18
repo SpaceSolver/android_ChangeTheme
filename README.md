@@ -40,6 +40,7 @@ ActionBarについて。ActionBarはアプリのテーマとして自動で定�
 ### ActionBarの動作の記述
 自動で生成されるViewですのでActivity内のコールバックメソッドで動作を記述するものがあります。以下は一例。
 (MainActivity.java)
+
     class MainActivity : AppCompatActivity() {
       override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -67,6 +68,7 @@ ToolBarは各layoutに記述するViewとなります。
 ほぼActionBarと同等な機能を有しますが、CoordinatorLayoutと組み合わせて動的にlayout制御することができたり、  
 カスタマイズしやすいコンポーネント(らしい)です。
 （values/styles.xml）
+
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
                 <item name="toolbarStyle">@style/MyApp.Toolbar</item>
     </style>
