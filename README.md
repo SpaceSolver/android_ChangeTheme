@@ -3,7 +3,7 @@
 ## アプリ動作
 起動後、テーマ変更ボタンを押下し一旦アプリを再起動するとThemeが変わります。
 
-## アプリ実装
+### アプリ実装
 SharedPreferencesにて、themeの種別を保持し、  
 次回起動時のonCreate()にてthemeの値をセットします。
 
@@ -16,18 +16,18 @@ AppCompatActivityを継承している場合は、ThemeにTheme.AppCompat
 2.ツールバー（アクションバー）  
 3.ナビゲーションバー  
 
-## ステータスバーについて
+### ステータスバーについて
 次の実装にて変更される。（values/styles.xml）  
 
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
          <item name="android:statusBarColor">#000000</item>
     </style>
 
-## ツールバー（アクションバー）について  
+### ツールバー（アクションバー）について  
 ActionBarについて。ActionBarはアプリのテーマとして自動で定義されているものになる。  
 変更したい場合は、style.xmlのテーマの要素として、定義を追記したり、属性値を変更すればよい。  
-らしいので、以下のように実装してみたが正しく反映されなかった・・・。
-（values/styles.xml）
+らしいので、以下のように実装してみたが正しく反映されなかった・・・。  
+（values/styles.xml）  
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="actionBarStyle">@style/actionBar</item>
     </style>
@@ -79,7 +79,7 @@ ToolBarは各layoutに記述するViewとなります。
  ToolBarを独自に追加してないため、表示されているのはActionBarと思っていたため  
  見事にハマってしまった。
      
-## ナビゲーションバー について
+### ナビゲーションバー について
 次の実装にて変更される。（values/styles.xml）  
 
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
