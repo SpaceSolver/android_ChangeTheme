@@ -1,5 +1,9 @@
 # android_ChangeTheme
 
+## Themeの継承について
+AppCompatActivityを継承している場合は、ThemeにTheme.AppCompat  
+またはTheme.AppCompatを含んだThemeを指定しないとErrorとなる。
+
 ## アプリで表示されるバー　その種類  
 1.ステータスバー  
 2.ツールバー（アクションバー）  
