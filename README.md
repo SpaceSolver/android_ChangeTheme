@@ -28,6 +28,7 @@ ActionBarについて。ActionBarはアプリのテーマとして自動で定�
 変更したい場合は、style.xmlのテーマの要素として、定義を追記したり、属性値を変更すればよい。  
 らしいので、以下のように実装してみたが正しく反映されなかった・・・。  
 （values/styles.xml）  
+
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="actionBarStyle">@style/actionBar</item>
     </style>
