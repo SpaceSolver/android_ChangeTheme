@@ -4,8 +4,7 @@
 起動後、テーマ変更ボタンを押下し一旦アプリを再起動するとThemeが変わります。
 
 ### アプリ画像
-[変更前画面](pic/theme1.PNG)　[変更後画面](pic/theme2.PNG)
-![theme1](https://user-images.githubusercontent.com/59986621/77611510-db045e80-6f68-11ea-9d91-93711c76a889.PNG)
+![theme1](https://user-images.githubusercontent.com/59986621/77611510-db045e80-6f68-11ea-9d91-93711c76a889.PNG)　![theme2](https://user-images.githubusercontent.com/59986621/77611641-38001480-6f69-11ea-8aa8-9c3ac8f3d3c0.PNG)
 
 ### アプリ実装
 SharedPreferencesにて、themeの種別を保持し、  
